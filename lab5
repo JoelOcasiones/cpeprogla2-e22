@@ -56,3 +56,135 @@ void newLine(){
      char s;
      do{cin.get(s);}while(s!='\n');     
 }
+
+
+//2
+
+#include <iostream>
+using namespace std;
+
+struct Name{
+       char lastName[30];
+       char firstName[30];
+};
+
+struct Student{
+       int id;
+       Name name;
+       double grade[3];
+	   int member[4];       
+};
+
+void newLine();
+
+int main(){
+    Student stud[6];
+    
+    cout << "Enter student 5 students: \n";
+    
+    for(int i = 1; i<6; i++){
+    cout << "Student " << stud[i].member << endl;
+    cout << "ID: ";
+    cin >> stud[i].id;
+    newLine();
+    cout << "First Name: ";
+    cin.getline(stud[i].name.firstName, 29);
+    cout << "Last Name: ";
+    cin.getline(stud[i].name.lastName, 29);
+    cout << "Enter 3 quizzes: ";
+    
+	       
+    
+		}
+		
+ system("pause > 0");
+    return 0;   
+}
+void newLine(){
+     char s;
+     do{cin.get(s);}while(s!='\n');     
+}
+
+//3
+
+#include <iostream>
+using namespace std;
+
+
+struct Name{
+    char lastName[30];
+    char firstName[30];
+};
+
+struct Date{
+	int day;
+	char month[30];
+	int year;
+};
+
+struct Item{
+	char id[30];
+	char name[30];
+	double price;
+};
+
+struct Order{
+	Date date;
+	Item item;
+};
+
+struct Customer{
+	Name name;
+	int contactNum;
+	Order order;
+};
+
+void newLine();
+
+int main(){
+	Customer info[3];
+	
+	cout<<"Enter 3 customers: \n";
+	
+	for(int i=1; i<5; i++){
+	cout<<"CUSTOMER INFORMATION "<<info[i]<<endl;
+	cout << "First Name: ";
+    cin.getline(info[i].name.firstName, 29);
+    cout << "Last Name: ";
+    cin.getline(info[i].name.lastName, 29);
+    cout << "Contact Number: ";
+    cin.getline(info[i].contactNum);
+    cout << "Oder Date: "<<endl;
+    cout << "Day: "<<endl;
+    cin.getline(info[i].order.date.day)
+    cout << "Month: "<<endl
+    cin.getline(info[i].order.date.month,29);
+    cout << "Year: "<<endl
+    cin.getline(info[i].order.date.year);
+    cout<< " "
+    
+	}
+	
+	
+    
+    
+	
+	
+	
+
+
+
+
+
+
+
+
+
+system("pause > 0");
+return 0;   
+}
+
+void newLine(){
+     char s;
+     do{cin.get(s);}while(s!='\n');     
+}
