@@ -37,16 +37,12 @@ int main(){
     cout << "ID: " << stud.id << endl;
     cout << "First Name: " << stud.name.firstName << endl;
     cout << "Last Name: " << stud.name.lastName << endl;
-    cout << "Average: " << sum/3 <<endl;
     for(int i=1; i<4; i++){
-            cout << "Grade "<< i << ": " << stud.grade[i] << endl; 	     
+        cout << "Grade "<< i << ": " << stud.grade[i] << endl; 	     
     }
     
-    
-    
-    
-    
-    if(sum>=75){
+    cout << "Average: " << sum/3 <<endl;
+    if(sum/3>=75){
 		cout << "Remark: Passed "<<endl;
 	}
 	else{
